@@ -16,7 +16,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
                                  hwnd, NULL, NULL, NULL);
 
         // Números
-        CreateWindow("BUTTON", "0",
+        CreateWindow("BUTTON", "a",
                      WS_VISIBLE | WS_CHILD ,
                      20, 200, 100, 30,
                      hwnd, (HMENU)10, NULL, NULL);
