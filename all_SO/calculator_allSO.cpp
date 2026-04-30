@@ -116,12 +116,13 @@ void Calculadora::igual() {
     if (pantalla.empty()) return;
 
     double resultado = resultadoExpresion(pantalla);
-    pantalla = std::to_string(resultado); //pasa el resultado de double a tring y lo muestra en pantalla
+    pantalla = std::to_string(resultado); //pasa el resultado de double a string y lo muestra en pantalla
 }
 
 void Calculadora::inverso() {
-    if (pantalla.empty()) return;
-    //se evalua el resultado y se evalua su inverso
+    if (pantalla.empty()) {
+        return;
+    }
     double resultado = resultadoExpresion(pantalla);
     if (resultado == 0) throw std::runtime_error("Error");
     double inverso= 1.0 / resultado;
