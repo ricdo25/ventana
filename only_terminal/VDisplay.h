@@ -34,7 +34,8 @@ Colaboradores:
 		void mostrarDisplay();
 		void waitForKeyPress() ;
 		void clearConsole();
-		void mostrartipocalculadora(double num1, int choice, double num2);
+		void mostrartipocalculadora();
+		void mostrarOperacion(double num1, int choice, double num2);
 	};
 
 #endif // VDISPLAY_H

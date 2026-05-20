@@ -1,5 +1,6 @@
 /*
-    Proyecto: Calculadora
+información C(CLase)R(Responsabilidades)C(Colaboradores)    
+Proyecto: Calculadora
     Curso: Fundamentos de Programación Orientada a Objetos (FPOO)
     Universidad del Valle
 
@@ -35,18 +36,20 @@ void VDisplay::waitForKeyPress() {
     std::cin.get();
 }
 
-void VDisplay::mostrartipocalculadora(double num1, int choice, double num2) {
-    if (choice == 1){
-        std::cout << num1 << "+" << num2;
+void VDisplay::mostrarOperacion(double num1, int choice, double num2){
+ if (choice == 1){
+        std::cout << num1 << "+" << num2 << "\n";
     } else if (choice == 2){
-        std::cout << num1 << "-" << num2;
+        std::cout << num1 << "-" << num2 << "\n";
     } if (choice == 3){
-        std::cout << num1 << "*" << num2;
+        std::cout << num1 << "*" << num2 << "\n";
     } else if (choice == 4){
-        std::cout << num1 << "/" << num2;
+        std::cout << num1 << "/" << num2 << "\n";
     } if (choice == 5){
-        std::cout << num1 << "^2";
+        std::cout << num1 << "^2" << "\n";
     }
+}
+void VDisplay::mostrartipocalculadora() {
     std::cout << "\n1\t2\t3\t+\n4\t5\t6\t-\n7\t8\t9\t*\n\t0\t\t/\n";
 }
 
